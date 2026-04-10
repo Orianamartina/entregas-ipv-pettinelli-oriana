@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cne80psc4e36i"]
+
+[ext_resource type="Texture2D" uid="uid://ef4dvg8urm0w" path="res://assets/background.png" id="1_oabld"]
+
+[node name="Background" type="TextureRect" unique_id=1936567448]
+scale = Vector2(1.4337502, 1.0800002)
+texture = ExtResource("1_oabld")
