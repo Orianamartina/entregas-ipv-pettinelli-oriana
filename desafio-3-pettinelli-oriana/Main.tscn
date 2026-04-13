@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://dnc5muoeyfwah"]
+
+[ext_resource type="PackedScene" uid="uid://vqu8xh4hhedx" path="res://entities/player/Player.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://cwss7yl8udbui" path="res://assets/textures/background.png" id="2"]
+[ext_resource type="Script" uid="uid://bkmvt4ya2xfm8" path="res://Main.gd" id="3"]
+[ext_resource type="PackedScene" uid="uid://bscjwoaotlcqc" path="res://entities/enemies/Turret.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://b4667wb7f2iuk" path="res://world/floor.tscn" id="6_3dxm6"]
+[ext_resource type="PackedScene" uid="uid://bn1r1avbieanf" path="res://world/obstacles/Platform.tscn" id="7_lgr22"]
+[ext_resource type="PackedScene" uid="uid://d4l8h66lnbqqs" path="res://world/obstacles/Box.tscn" id="7_trn2v"]
+[ext_resource type="PackedScene" uid="uid://ccvx2wwxf80ya" path="res://pared.tscn" id="8_trn2v"]
+
+[node name="Main" type="Node" unique_id=2099339857]
+script = ExtResource("3")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=404728517]
+layer = -6
+
+[node name="Background" type="TextureRect" parent="CanvasLayer" unique_id=762958261]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -3.5
+offset_right = -1.0
+offset_bottom = -3.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2")
+expand_mode = 1
+
+[node name="Player" parent="." unique_id=1564132912 instance=ExtResource("1")]
+position = Vector2(401, 318.5)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1857857861]
+position = Vector2(-1, 0)
+limit_enabled = false
+
+[node name="Pared" parent="." unique_id=1239668563 instance=ExtResource("8_trn2v")]
+position = Vector2(33, -129.5)
+
+[node name="Floor" type="Node" parent="." unique_id=1929539454]
+
+[node name="Floor" parent="Floor" unique_id=659933810 instance=ExtResource("6_3dxm6")]
+position = Vector2(398, 437.5)
+
+[node name="Floor2" parent="Floor" unique_id=1206996295 instance=ExtResource("6_3dxm6")]
+position = Vector2(1195, 436.5)
+
+[node name="Floor3" parent="Floor" unique_id=981796070 instance=ExtResource("6_3dxm6")]
+position = Vector2(1989, 436.5)
+
+[node name="Platforms" type="Node" parent="." unique_id=538182218]
+
+[node name="Platform" parent="Platforms" unique_id=1179568668 instance=ExtResource("7_lgr22")]
+position = Vector2(330, 213)
+
+[node name="Platform3" parent="Platforms" unique_id=1361670993 instance=ExtResource("7_lgr22")]
+position = Vector2(938, 27.5)
+
+[node name="Platform2" parent="Platforms" unique_id=1400247368 instance=ExtResource("7_lgr22")]
+position = Vector2(686, 168.5)
+
+[node name="Platform4" parent="Platforms" unique_id=335123314 instance=ExtResource("7_lgr22")]
+position = Vector2(1116, -59)
+
+[node name="Turrets" type="Node" parent="." unique_id=191793229]
+
+[node name="Turret4" parent="Turrets" unique_id=551391417 instance=ExtResource("4")]
+position = Vector2(1295, -229)
+
+[node name="Turret" parent="Turrets" unique_id=922516262 instance=ExtResource("4")]
+position = Vector2(450, 164)
+
+[node name="Turret2" parent="Turrets" unique_id=1721761184 instance=ExtResource("4")]
+position = Vector2(736, -156)
+
+[node name="Turret3" parent="Turrets" unique_id=1433837564 instance=ExtResource("4")]
+position = Vector2(1054, 248)
+
+[node name="Box" parent="." unique_id=243115502 instance=ExtResource("7_trn2v")]
+position = Vector2(118, 263)
+
+[node name="Box2" parent="." unique_id=1866949102 instance=ExtResource("7_trn2v")]
+position = Vector2(130, 325)
