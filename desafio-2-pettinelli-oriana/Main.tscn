@@ -9,13 +9,7 @@
 [node name="Main" type="Node" unique_id=811420068]
 script = ExtResource("1_cm0pq")
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1091221622]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=2091221622]
-motion_scale = Vector2(0.3, 0)
-motion_mirroring = Vector2(800, 0)
-
-[node name="Background" type="TextureRect" parent="ParallaxBackground/ParallaxLayer" unique_id=3091221622]
+[node name="Background" type="TextureRect" parent="." unique_id=-1203745674]
 offset_right = 800.0
 offset_bottom = 600.0
 texture = ExtResource("2")
