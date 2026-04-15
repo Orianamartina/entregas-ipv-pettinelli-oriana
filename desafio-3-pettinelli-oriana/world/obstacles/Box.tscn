@@ -5,7 +5,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_06v8e"]
 size = Vector2(64, 64)
 
-[node name="Box" type="RigidBody2D" unique_id=243115502]
+[node name="Box" type="RigidBody2D" unique_id=1829202391]
+collision_layer = 3
+collision_mask = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1937828002]
 position = Vector2(0, -1)

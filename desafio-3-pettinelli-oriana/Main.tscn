@@ -30,6 +30,7 @@ expand_mode = 1
 
 [node name="Player" parent="." unique_id=1564132912 instance=ExtResource("1")]
 position = Vector2(401, 318.5)
+collision_mask = 3
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1857857861]
 position = Vector2(-1, 0)
@@ -60,6 +61,15 @@ position = Vector2(938, 27.5)
 [node name="Platform2" parent="Platforms" unique_id=1400247368 instance=ExtResource("7_lgr22")]
 position = Vector2(686, 168.5)
 
+[node name="Platform7" parent="Platforms" unique_id=1759930663 instance=ExtResource("7_lgr22")]
+position = Vector2(1901, -206)
+
+[node name="Platform6" parent="Platforms" unique_id=1792410512 instance=ExtResource("7_lgr22")]
+position = Vector2(1696, -101)
+
+[node name="Platform5" parent="Platforms" unique_id=941438386 instance=ExtResource("7_lgr22")]
+position = Vector2(1451, 11)
+
 [node name="Platform4" parent="Platforms" unique_id=335123314 instance=ExtResource("7_lgr22")]
 position = Vector2(1116, -59)
 
@@ -68,7 +78,10 @@ position = Vector2(1116, -59)
 [node name="Turret4" parent="Turrets" unique_id=551391417 instance=ExtResource("4")]
 position = Vector2(1295, -229)
 
-[node name="Turret" parent="Turrets" unique_id=922516262 instance=ExtResource("4")]
+[node name="Turret4" parent="Turrets/Turret4" unique_id=922516262 instance=ExtResource("4")]
+position = Vector2(559, 41)
+
+[node name="Turret" parent="Turrets" unique_id=1794717684 instance=ExtResource("4")]
 position = Vector2(450, 164)
 
 [node name="Turret2" parent="Turrets" unique_id=1721761184 instance=ExtResource("4")]
@@ -82,3 +95,4 @@ position = Vector2(118, 263)
 
 [node name="Box2" parent="." unique_id=1866949102 instance=ExtResource("7_trn2v")]
 position = Vector2(130, 325)
+collision_layer = 1

@@ -51,5 +51,11 @@ func _physics_process(delta: float) -> void:
 	velocity.y += GRAVITY
 	move_and_slide()
 
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		var collider = collision.get_collider()
+		if collider is RigidBody2D:
+			collider.apply_central_impulse(-collision.get_normal() * 200.0)
+
 func take_damage() -> void:
 	queue_free()
