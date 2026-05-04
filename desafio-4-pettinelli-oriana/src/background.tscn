@@ -1,0 +1,48 @@
+[gd_scene format=4 uid="uid://ddf06dabrx7kn"]
+
+[ext_resource type="Texture2D" uid="uid://ct77imo5scsq5" path="res://assets/textures/background.png" id="1_hbjnu"]
+[ext_resource type="TileSet" uid="uid://ctomvkj24u4oy" path="res://src/environment/tile_set.tres" id="2_xcs3e"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1773414751]
+layer = -1
+
+[node name="Background" type="TextureRect" parent="." unique_id=1664084491]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource("1_hbjnu")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="Background" unique_id=966862615]
+layout_mode = 0
+offset_right = 287.0
+offset_bottom = 217.0
+color = Color(0.6868816, 0.8832226, 0.88522166, 1)
+
+[node name="TileMapLayer4" type="TileMapLayer" parent="Background" unique_id=354646734]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAADAAUAAAASAAoAAAAKAAUAAAASAAoAAAAQAAUAAAASAAoAAAAOAAIAAAAbAA0AAAABAAIAAAATAA4AAAAFAAMAAAAWAA0AAAAIAAEAAAAUAA0AAAAMAAQAAAAUAA0AAAAHAAIAAAASAA4AAAAGAAMAAAAcAAAAAAA=")
+tile_set = ExtResource("2_xcs3e")
+
+[node name="TileMapLayer3" type="TileMapLayer" parent="Background" unique_id=568662311]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAADAAUAAAASAAoAAAAKAAUAAAASAAoAAAAQAAUAAAASAAoAAAAOAAIAAAAbAA0AAAABAAIAAAATAA4AAAAFAAMAAAAWAA0AAAAIAAEAAAAUAA0AAAAMAAQAAAAUAA0AAAAHAAIAAAASAA4AAAA=")
+tile_set = ExtResource("2_xcs3e")
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="Background" unique_id=840807918]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAADAAUAAAASAAoAAAAKAAUAAAASAAoAAAAQAAUAAAASAAoAAAA=")
+tile_set = ExtResource("2_xcs3e")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Background" unique_id=1965126632]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAAAAAkAAAABAAsAAAAAAAoAAAABAAsAAAAAAAsAAAABAAsAAAAAAAwAAAABAAsAAAAAAA0AAAABAAsAAAAFAAYAAAAUAAkAAAANAAYAAAAUAAkAAAA=")
+tile_set = ExtResource("2_xcs3e")
+
+[node name="ColorRect2" type="ColorRect" parent="Background" unique_id=754933667]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 105.0
+offset_right = 289.0
+offset_bottom = 226.0
+color = Color(0.9647059, 0.8156863, 0.6156863, 1)

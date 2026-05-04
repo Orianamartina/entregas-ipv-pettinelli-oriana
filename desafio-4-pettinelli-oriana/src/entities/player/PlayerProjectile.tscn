@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://dnl107pupmqic"]
+
+[ext_resource type="PackedScene" uid="uid://cgadr55reetnl" path="res://src/entities/Projectile.tscn" id="1"]
+
+[sub_resource type="Animation" id="Animation_ka2wl"]
+length = 0.001
+
+[sub_resource type="Animation" id="1"]
+resource_name = "fire_loop"
+loop_mode = 1
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"moving"],
+"method": &"play"
+}]
+}
+
+[sub_resource type="Animation" id="2"]
+resource_name = "fire_start"
+length = 0.2
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"moving"],
+"method": &"play"
+}]
+}
+
+[sub_resource type="Animation" id="3"]
+resource_name = "hit"
+length = 0.35
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"hit"],
+"method": &"play"
+}]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.35),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_remove"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7l84f"]
+_data = {
+&"RESET": SubResource("Animation_ka2wl"),
+&"fire_loop": SubResource("1"),
+&"fire_start": SubResource("2"),
+&"hit": SubResource("3")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k560y"]
+radius = 8.0
+
+[node name="PlayerProjectile" unique_id=1064436579 instance=ExtResource("1")]
+
+[node name="ProjectileAnimations" parent="." index="1" unique_id=487289889]
+libraries/ = SubResource("AnimationLibrary_7l84f")
+
+[node name="Hitbox" parent="." index="2" unique_id=733271509]
+collision_mask = 5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" index="0" unique_id=2048573556]
+shape = SubResource("CircleShape2D_k560y")
