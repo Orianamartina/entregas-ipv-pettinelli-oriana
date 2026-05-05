@@ -36,17 +36,20 @@ tile_map_data = PackedByteArray("AAADACwAAAACAAIAAAADACsAAAACAAIAAAADACoAAAACAAI
 tile_set = ExtResource("4_0vhqb")
 
 [node name="Platform" parent="Environment/Ground" unique_id=626546592 instance=ExtResource("11")]
-position = Vector2(1472.51, 221.622)
+modulate = Color(0, 1, 1, 0)
+position = Vector2(1473.51, 220.622)
 
 [node name="Platform2" parent="Environment/Ground" unique_id=1474211809 instance=ExtResource("11")]
-position = Vector2(1728.51, 261.622)
+modulate = Color(1, 1, 1, 0)
+position = Vector2(1729.51, 268.622)
 
 [node name="Platform3" parent="Environment/Ground" unique_id=768795598 instance=ExtResource("11")]
+modulate = Color(1, 1, 1, 0)
 position = Vector2(1584.51, 413.622)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="Environment/Ground" unique_id=255576389]
 position = Vector2(449.581, 484.16)
-tile_map_data = PackedByteArray("AAD9////AAABAAUAAAD+////AAACAAUAAAD/////AAACAAUAAAAAAP//AAACAAUAAAABAP//AAACAAUAAAACAP//AAACAAUAAAADAP//AAACAAUAAAAEAP//AAACAAUAAAAFAP//AAACAAUAAAAGAP//AAACAAUAAAAHAP//AAACAAUAAAAIAP//AAADAAUAAAA=")
+tile_map_data = PackedByteArray("AAD9////AAABAAUAAAD+////AAACAAUAAAD/////AAACAAUAAAAAAP//AAACAAUAAAABAP//AAACAAUAAAACAP//AAACAAUAAAADAP//AAACAAUAAAAEAP//AAACAAUAAAAFAP//AAACAAUAAAAGAP//AAACAAUAAAAHAP//AAACAAUAAAAIAP//AAADAAUAAABEAPv/AAACAAIAAABFAPv/AAACAAIAAABGAPv/AAACAAIAAABHAPv/AAACAAIAAABIAPv/AAACAAIAAABJAPv/AAACAAIAAAA9AO//AAACAAIAAAA+AO//AAACAAIAAAA/AO//AAACAAIAAABAAO//AAACAAIAAABBAO//AAACAAIAAABCAO//AAACAAIAAABNAPL/AAACAAIAAABOAPL/AAACAAIAAABPAPL/AAACAAIAAABQAPL/AAACAAIAAABRAPL/AAACAAIAAABSAPL/AAACAAIAAAA=")
 tile_set = ExtResource("4_0vhqb")
 
 [node name="Entities" type="Node2D" parent="Environment" unique_id=35465706]

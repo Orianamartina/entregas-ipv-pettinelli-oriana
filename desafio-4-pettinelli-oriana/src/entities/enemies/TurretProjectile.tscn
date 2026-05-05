@@ -69,6 +69,7 @@ shape = SubResource("CapsuleShape2D_uid2m")
 
 [node name="Sprite" parent="." index="3" unique_id=1474987145]
 position = Vector2(2, 2.3841858e-07)
+rotation = -6.2831855
 scale = Vector2(0.4790338, 0.5819254)
 sprite_frames = SubResource("SpriteFrames_vr088")
 frame_progress = 0.50804067

@@ -13,7 +13,7 @@ extends CharacterBody2D
 
 @export var ACCELERATION: float = 3000.0 # Lo multiplicamos por delta, asi que es 60.0 / (1.0 / 60.0)
 @export var H_SPEED_LIMIT: float = 300.0
-@export var jump_speed: int = 350
+@export var jump_speed: int = 600
 @export var FRICTION_WEIGHT: float = 6.25 # Lo multiplicamos por delta, asi que es 0.1 / (1.0 / 60.0)
 @export var gravity: int = 625.0 # Lo multiplicamos por delta, asi que es 10.0 / (1.0 / 60.0)
 @export var push_force: float = 80.0
