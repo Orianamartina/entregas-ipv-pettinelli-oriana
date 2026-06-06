@@ -14,7 +14,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Proyecto Godot - Clase 7"
+config/name="entrega-6-pettinelli-oriana"
 run/main_scene="res://src/screens/MainMenu.tscn"
 config/features=PackedStringArray("4.6")
 config/icon="res://icon.png"

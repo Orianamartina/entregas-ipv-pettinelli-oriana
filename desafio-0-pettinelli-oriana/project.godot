@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="desafio-0"
+config/name="entrega-0-pettinelli-oriana"
 run/main_scene="uid://d276elky0uknf"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
