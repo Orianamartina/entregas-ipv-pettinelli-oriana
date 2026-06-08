@@ -1,0 +1,181 @@
+[gd_scene format=3 uid="uid://cce5td0h57nwk"]
+
+[ext_resource type="Script" uid="uid://dkvs1wsa1kgy5" path="res://src/screens/options_menu.gd" id="1_27kvi"]
+[ext_resource type="FontFile" path="res://assets/fonts/Default-Medium.tres" id="1_gv8jp"]
+[ext_resource type="PackedScene" uid="uid://mn0e7y2hlerh" path="res://src/game/ui/ActionInput.tscn" id="2_27kvi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t4mfc"]
+bg_color = Color(0.1882353, 0.1254902, 0.078431375, 0.9372549)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xif3j"]
+content_margin_left = 5.0
+content_margin_top = 3.0
+content_margin_right = 5.0
+content_margin_bottom = 3.0
+bg_color = Color(0, 0.29803923, 0.6392157, 0.2509804)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.2901961, 0.2901961, 0.2901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5a1cm"]
+content_margin_left = 5.0
+content_margin_top = 3.0
+content_margin_right = 5.0
+content_margin_bottom = 3.0
+bg_color = Color(0, 0.29803923, 0.6392157, 0.62352943)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.2901961, 0.2901961, 0.2901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tkec7"]
+content_margin_left = 5.0
+content_margin_top = 3.0
+content_margin_right = 5.0
+content_margin_bottom = 3.0
+bg_color = Color(0, 0.29803923, 0.6392157, 0.4392157)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.2901961, 0.2901961, 0.2901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tkluq"]
+content_margin_left = 5.0
+content_margin_top = 3.0
+content_margin_right = 5.0
+content_margin_bottom = 3.0
+bg_color = Color(0, 0, 0, 0.2509804)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.2901961, 0.2901961, 0.2901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a078r"]
+content_margin_left = 5.0
+content_margin_top = 3.0
+content_margin_right = 5.0
+content_margin_bottom = 3.0
+bg_color = Color(0.5882353, 0.6392157, 0, 0.4)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.2901961, 0.2901961, 0.2901961, 1)
+
+[node name="Control" type="Control" unique_id=1520512786]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_27kvi")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=13734474]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.3647059)
+
+[node name="Panel" type="Panel" parent="." unique_id=702485637]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 20.0
+offset_right = -50.0
+offset_bottom = -20.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_t4mfc")
+
+[node name="Label" type="Label" parent="Panel" unique_id=149807677]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -36.0
+offset_right = 36.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_gv8jp")
+text = "Options"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ReturnButton" type="Button" parent="Panel" unique_id=460538275]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_gv8jp")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xif3j")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_xif3j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5a1cm")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_5a1cm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tkec7")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_tkec7")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_tkec7")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_tkec7")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_tkluq")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_tkluq")
+theme_override_styles/focus = SubResource("StyleBoxFlat_a078r")
+text = "Return"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel" unique_id=1621290276]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 21.0
+offset_right = 172.0
+offset_bottom = 86.0
+theme_override_constants/scrollbar_h_separation = 5
+theme_override_constants/scrollbar_v_separation = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/ScrollContainer" unique_id=425755143]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+
+[node name="MoveLeft" parent="Panel/ScrollContainer/VBoxContainer" unique_id=1826485795 instance=ExtResource("2_27kvi")]
+layout_mode = 2
+action_input = "A"
+action_name = "Move left"
+
+[node name="MoveRight" parent="Panel/ScrollContainer/VBoxContainer" unique_id=344610263 instance=ExtResource("2_27kvi")]
+layout_mode = 2
+action_input = "D"
+action_name = "Move Right"
+
+[node name="Jump" parent="Panel/ScrollContainer/VBoxContainer" unique_id=1281116782 instance=ExtResource("2_27kvi")]
+layout_mode = 2
+action_input = "W, Space"
+action_name = "Jump"
+
+[node name="Dash" parent="Panel/ScrollContainer/VBoxContainer" unique_id=1851031523 instance=ExtResource("2_27kvi")]
+layout_mode = 2
+action_input = "Shift"
+action_name = "Dash"
+
+[connection signal="pressed" from="Panel/ReturnButton" to="." method="_on_return_button_pressed"]

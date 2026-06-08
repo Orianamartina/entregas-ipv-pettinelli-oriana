@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://mn0e7y2hlerh"]
+
+[ext_resource type="FontFile" path="res://assets/fonts/Default-Medium.tres" id="1_he8pm"]
+[ext_resource type="Script" uid="uid://cf51hft78n66t" path="res://src/game/ui/action_input.gd" id="1_lidwa"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8668g"]
+bg_color = Color(0.3268612, 0.6873234, 0.4561016, 1)
+shadow_size = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f6cjq"]
+bg_color = Color(0, 0, 0, 0.3529412)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[node name="ActionInput" type="PanelContainer" unique_id=1826485795]
+theme_override_styles/panel = SubResource("StyleBoxFlat_8668g")
+script = ExtResource("1_lidwa")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1902556411]
+layout_mode = 2
+
+[node name="PanelInput" type="PanelContainer" parent="HBoxContainer" unique_id=1419719223]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_f6cjq")
+
+[node name="Input" type="Label" parent="HBoxContainer/PanelInput" unique_id=693545188]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_he8pm")
+text = "A"
+
+[node name="Action" type="Label" parent="HBoxContainer" unique_id=181172877]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_he8pm")
+text = "Move left"
